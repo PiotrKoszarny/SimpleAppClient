@@ -1,0 +1,19 @@
+<section>
+    <div>
+        <form [formGroup]="addProductFG" (ngSubmit)="addProduct()">
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Nazwa produktu</mat-label>
+                <input matInput formControlName="ProductName" type="text" placeholder="Nazwa produktu">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Cena za jednostkę</mat-label>
+                <input matInput formControlName="UnitPrice" type="text" placeholder="Cena za jednostkę">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Ilość w magazynie</mat-label>
+                <input matInput formControlName="UnitsInStock" type="text" placeholder="Ilość w magazynie">
+            </mat-form-field>
+            <button mat-button>Dodaj</button>
+        </form>
+    </div>
+</section>
