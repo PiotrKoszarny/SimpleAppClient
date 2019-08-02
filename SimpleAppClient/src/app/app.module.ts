@@ -8,6 +8,8 @@ import { ProductRoutingModule } from './product/product-routing.module';
 import { ProductModule } from './product/product.module';
 import { MatInputModule, MatFormFieldModule, MatButtonModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AccountRoutingModule } from './account/account-routing.module';
+import { AccountModule } from './account/account.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     ProductRoutingModule,
+    AccountRoutingModule,
     ProductModule,
+    AccountModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,

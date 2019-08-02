@@ -11,12 +11,6 @@ import { Product } from '../models/product';
 export class AddProductComponent implements OnInit {
 
   addProductFG: FormGroup;
-  //  = new ({
-  //   ProductId:
-  //   ProductName: string;
-  //   UnitPrice: number;
-  //   UnitsInStock: number;
-  // })
   constructor(
     private productService: ProductService,
     private fb: FormBuilder
